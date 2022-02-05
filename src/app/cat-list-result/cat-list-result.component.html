@@ -1,0 +1,7 @@
+<ul *ngIf="cats.length > 0; else noCat">
+  <li *ngFor="let cat of cats">{{cat.name}}</li>
+</ul>
+
+<ng-template #noCat>
+  <h3>No cat available</h3>
+</ng-template>
